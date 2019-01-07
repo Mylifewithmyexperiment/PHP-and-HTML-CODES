@@ -1,0 +1,86 @@
+<html>
+<title>Homepage | FD Sign Services</title>
+<style>
+.main
+{
+height:625px;
+width:1350px;
+background-color:transparent;
+}
+.header
+{
+height:100px;
+width:1350px;
+background-color:transparent;
+}
+.sitebody
+{
+height:465px;
+width:1350px;
+background-color:transparent;
+}
+.footer
+{
+height:60px;
+width:1350px;
+background-color:transparent;
+}
+.left
+{
+height:485px;
+width:800px;
+background-color:transparent;
+float:left;
+}
+.right
+{
+height:485;
+width:550px;
+float:left;
+background-color:transparent;
+}
+</style>
+<body background="bg1.jpg">
+<div class="main">
+
+ <div class="header">
+ <?php
+ include("header.html");
+ ?>
+ </div>
+ 
+ <div class="sitebody">
+  <div class="left"></div>
+  <div class="right">
+  
+  <fieldset>
+    <legend><font face="Bradley Hand ITC">Login</font></legend>
+	 <table>
+	  <tr><td>Username <input type="text"/></td><td> Password <input type="password"/></td><td><input type="submit" value="Login"/></td></tr>
+	 </table>
+   </fieldset><br/>
+<fieldset>
+    <legend>Register</legend>
+	 <table>
+	  <tr><td>Register as</td><td><select name="select"><option>Select</option><option id="op1">User</option><option id="op2">Provider</option></select></td></tr>
+	  <tr><td>Name</td><td><input type="text" required=""/></td></tr>
+	  <tr><td>Email</td><td><input type="mail" required=""/></td></tr>
+	  <tr><td>Username</td><td><input type="text" maxlength=18 required=""/></td></tr>
+	  <tr><td>Contact No.</td><td><input type="text" maxlength=10 required=""/></td></tr>
+	  <tr><td>Password</td><td><input type="password" required=""/></td></tr>
+	  <tr><td></td><td><input type="submit" value="Submit"/></td></tr>
+	 </table>
+   </fieldset>
+  </div>
+ </div>
+ 
+ <div class="footer">
+<?php
+ include("footer.html");
+ ?>
+ </div>
+</div>
+
+
+</body>
+</html>
